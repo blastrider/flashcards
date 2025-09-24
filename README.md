@@ -160,7 +160,7 @@ CI (GitHub Actions) fourni : format, clippy, tests, build.
 
 ## Licence
 
-Dual licence **MIT OR Apache-2.0** — voir `LICENSE*` dans le repo. (bientôt)
+Dual licence **MIT OR Apache-2.0** — voir `LICENSE*` dans le repo. (bientôt, je pense)
 
 ---
 
