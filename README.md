@@ -160,10 +160,10 @@ CI (GitHub Actions) fourni : format, clippy, tests, build.
 
 ## Licence
 
-Dual licence **MIT OR Apache-2.0** — voir `LICENSE*` dans le repo.
+Dual licence **MIT OR Apache-2.0** — voir `LICENSE*` dans le repo. (bientôt)
 
 ---
 
 ## Contribution
 
-Prisent en charge : pull requests, issues pour bugs et demandes d’amélioration. Respecter la checklist CI (fmt, clippy, tests).
+Prisent en charge : pull requests, issues pour bugs et demandes d’amélioration. Respecter la checklist CI (fmt, clippy, tests)
