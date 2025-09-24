@@ -1,0 +1,44 @@
+[package]
+name = "flashcards"
+version = "0.1.0"
+# Dual license MIT/Apache-2.0
+license = "MIT OR Apache-2.0"
+authors = ["Ton Nom <you@example.com>"]
+edition = "2021"
+rust-version = "1.70"
+
+description = "CLI offline pour réviser des fiches (méthode Leitner)."
+repository = "https://example.com/you/flashcards-cli"
+keywords = ["flashcards", "leitner", "cli", "education"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+# clap: parsing CLI (subcommands, derives).
+clap = { version = "4.4", features = ["derive"] }
+# csv: robust CSV parsing with headers and error reporting.
+csv = "1.3"
+# serde + serde_json: serialize/deserialize store & exports.
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+# directories: platform-specific storage dirs (~/.local/share/...).
+directories = "5.0"
+# inquire: interactive prompts (keyboard-first, accessibility friendly).
+inquire = "0.7"
+# tracing + tracing-subscriber: structured logging with env filter.
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt"] }
+# anyhow + thiserror: error handling for binary & domain.
+anyhow = "1.0"
+thiserror = "1.0"
+# toml: simple config read/write.
+toml = "0.7"
+# small convenience crates
+uuid = { version = "1.4", features = ["v4"] } # card ID
+# Dev
+[dev-dependencies]
+tempfile = "3.6"
+assert_cmd = "2.0"
+
+[[bin]]
+name = "flashcards-cli"
+path = "bin/flashcards-cli.rs"
