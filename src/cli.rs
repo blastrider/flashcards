@@ -1,6 +1,6 @@
 use clap::{Parser, Subcommand};
 
-/// Flashcards CLI — offline Leitner reviewer
+/// Flashcards CLI — offline Leitner review
 #[derive(Parser, Debug)]
 #[command(author, version, about)]
 pub struct Args {
